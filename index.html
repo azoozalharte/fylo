@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,8 +23,8 @@
         document.documentElement.classList.remove("dark");
       }
     </script>
-
     <script src="../path/to/flowbite/dist/flowbite.js" defer></script>
+    <script src="js/main.js" defer></script>
 
     <title>Simple Tailwind Starter</title>
   </head>
@@ -48,7 +48,7 @@
           <!-- Dark SVG Icon -->
           <svg
             id="theme-toggle-dark-icon"
-            class="w-5 h-5"
+            class="w-5 h-5 hidden"
             fill="currentColor"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
@@ -74,5 +74,26 @@
         </button>
       </menu>
     </header>
+    <section
+      id="hero"
+      class="bg-curvy-light-mode dark:bg-curvy-dark-mode bg-no-repeat bg-contain bg-bottom"
+    >
+      <div class="flex flex-col justify-center items-center space-y-10">
+        <img src="./img/illustration-intro.png" alt="" />
+        <p class="max-w-2xl text-4xl text-center font-bold">
+          All your files in one secure location, assessible anywhere.
+        </p>
+        <p class="max-w-xl text-center text-lg font-lg">
+          Fylo stores all your most important files in one secure location.
+          Access them wherever you need, share and collaborate with friends
+          family, and co-workers.
+        </p>
+        <button
+          class="bg-accentCyan py-2 px-8 rounded-full font-medium hover:scale-95 transition-all duration-300"
+        >
+          Get Started
+        </button>
+      </div>
+    </section>
   </body>
 </html>
